@@ -23,8 +23,11 @@
 [1weekhueru](https://little-hoge.github.io/1weekhueru/)  
 [![eujuc-wadsj](https://user-images.githubusercontent.com/3638785/91658124-6a5a0300-eb01-11ea-8d50-3294f524083b.gif)](https://little-hoge.github.io/1weekhueru/)
 
+#### Android版
+[1weekhueru.apk](https://github.com/little-hoge/1weekhueru/releases/download/v1.0/1weekhueru.apk)
+
 #### Unity1週間ゲームジャムお題「ふえる」
-[unity1week_202008100](https://unityroom.com/games/aha/settings/publish)
+[unity1week_202008100](https://unityroom.com/games/aha)
 
 # 開発環境
 - Windows10 64bit
