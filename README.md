@@ -56,6 +56,3 @@
 #### 素材
 - Google Fonts  
 https://fonts.google.com/
-
-- 画像  
-http://gahag.net/001274-floral-background/
