@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
     // X、Y、Z座標の最小/最大
     const short xMinPos = -30, xMaxPos = 30;
     const short yMinPos = -50, yMaxPos = 50;
-    const short zMinPos = 40, zMaxPos = 90;
+    const short zMinPos = 0, zMaxPos = 360;
 
     // ゲーム状態
     gamestate gstate;
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour {
         float x = Random.Range(xMinPos, xMaxPos);
         float y = Random.Range(yMinPos, yMaxPos);
         float z = Random.Range(zMinPos, zMaxPos);
-
+        Debug.Log(z);
         return new Vector3(x, y, z);
     }
 
@@ -82,7 +82,9 @@ public class GameManager : MonoBehaviour {
 
             //インスタンスを作成
             GameObject CopyObj = Instantiate(Logo);
-            CopyObj.transform.position = GetRandomPosition();
+            var Pos = GetRandomPosition();
+            CopyObj.transform.position = (Vector2)Pos;
+            CopyObj.transform.Rotate(new Vector3(0f, 0f, Pos.z));
             CopyObj.tag = "Untagged";
             LogoList.Add(CopyObj);
 
